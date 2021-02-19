@@ -39,6 +39,7 @@
         font-weight: normal
         margin: 16px 0px 56px
         color: $text
+        line-height: 1.5
     &__btn
 .header-img
     width: 478px
@@ -84,6 +85,42 @@
     .header-img
         width: 350px
         height: 350px
-//320px: title 34px, else 16px
-//img 180x160
-    //btn 165x40
+@media screen and ( max-width:  850px)
+    .header-info
+        &__title
+            font-size: 45px
+@media screen and ( max-width:  775px)
+    .header-img
+        width: 290px
+        height: 290px
+@media screen and ( max-width:  700px)
+    .header-img
+        width: 260px
+        height: 260px
+@media screen and ( max-width:  650px)
+    .header
+        background-size: 800% 200%
+        background-position-x: 60%
+    .header-wrap
+        flex-direction: column-reverse
+        justify-content: center
+        align-items: center
+    .header-info
+        margin-top: 20px
+        text-align: center
+        &__title
+            font-size: 34px
+        &__subtitle
+            font-size: 34px
+        &__text
+            font-size: 16px
+            margin: 14px 0px 40px
+    .header-img
+        width: 200px
+        height: 200px
+        margin-top: 0px
+    .header-ball-1,
+    .header-ball-2,
+    .header-ball-3,
+    .header-ball-4
+        display: none
