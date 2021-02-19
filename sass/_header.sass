@@ -99,8 +99,10 @@
         height: 260px
 @media screen and ( max-width:  650px)
     .header
+        height: 640px
         background-size: 800% 200%
         background-position-x: 60%
+        z-index: 0
     .header-wrap
         flex-direction: column-reverse
         justify-content: center
@@ -124,3 +126,6 @@
     .header-ball-3,
     .header-ball-4
         display: none
+@media screen and ( max-width:  300px)
+    .header
+        height: 670px

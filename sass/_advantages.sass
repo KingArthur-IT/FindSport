@@ -1,9 +1,10 @@
 .advantages-block
     border-radius: 20px
-    transform: translateY(-50%)
     min-height: 305px
-    background: #F6F7FC
     display: flex
+    position: absolute
+    margin-top: -150px
+    left: 7.5%
     &__item
         padding: 56px
         flex-basis: 33.3%
@@ -22,33 +23,36 @@
         &__item
             padding: 36px
     .advantages-block
-        transform: translateY(-30%)
+        margin-top: -100px
 @media screen and ( max-width:  1000px)
     .advantages-block
         &__item
             padding: 36px
     .advantages-block
-        transform: translateY(-50%)
+        margin-top: -150px
 @media screen and ( max-width:  750px)
     .advantages-block
-        transform: translateY(-40%)
-        padding: 0px 10px
+        padding: 15px 10px
         &__item
             padding: 16px
 @media screen and ( max-width:  650px)
-    .header
-        height: 640px
+    .advantages-block
+        position: relative
+        width: 60%
+        flex-direction: column
+        margin-top: -100px
+        left: 0
+        &__item
+            padding: 20px 56px
+            flex-basis: 100%
+@media screen and ( max-width:  475px)
     .advantages-block
         width: 85%
-        flex-direction: column
-        padding: 0px
-        transform: translateY(-70px)
-        &__item
-            padding: 56px
-            flex-basis: 100%
-@media screen and ( max-width:  400px)
+@media screen and ( max-width:  410px)
     .advantages-block
-        transform: translateY(-50px)
+        margin-top: -50px
+        &__item
+            padding: 20px 24px
 @media screen and ( max-width:  300px)
-    .header
-        height: 670px
+    .advantages-block
+        margin-top: -35px
