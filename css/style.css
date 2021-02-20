@@ -370,6 +370,15 @@ template {
   background: #F6F7FC;
 }
 
+.container-padding {
+  padding: 120px 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .container-padding {
+    padding: 40px 0px;
+  }
+}
 .header {
   background: url("../img/header/header-bg.png") left no-repeat;
   background-size: 100% 100%;
@@ -670,7 +679,8 @@ template {
   padding-top: 250px;
 }
 .booking-hero {
-  background: url("../img/booking-bg.png") no-repeat left;
+  background: url("../img/booking-bg.png") no-repeat right;
+  background-size: cover;
   min-height: 506px;
   width: 82%;
   position: relative;
@@ -679,14 +689,14 @@ template {
 }
 .booking-ipad {
   position: absolute;
-  left: 0;
+  left: -40px;
   top: 290px;
   width: 638px;
   display: block;
 }
 .booking-info {
   position: relative;
-  left: 433px;
+  left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,7 +726,7 @@ template {
   color: #F6F7FC;
   font-size: 16px;
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 1150px) {
@@ -724,7 +734,7 @@ template {
     width: 600px;
   }
   .booking-info {
-    left: 420px;
+    left: 55%;
     width: 35%;
   }
 }
@@ -760,6 +770,8 @@ template {
     width: 85%;
     position: relative;
     top: 160px;
+    width: 95%;
+    left: 1%;
   }
   .booking-info {
     left: 0;
@@ -780,6 +792,7 @@ template {
 @media screen and (max-width: 650px) {
   .booking {
     top: -150px;
+    margin-bottom: -150px;
   }
   .booking-info {
     width: 80%;
@@ -789,6 +802,7 @@ template {
 @media screen and (max-width: 550px) {
   .booking {
     top: -100px;
+    margin-bottom: -100px;
   }
   .booking-ipad {
     top: 100px;
@@ -800,5 +814,96 @@ template {
 @media screen and (max-width: 310px) {
   .booking-info__title {
     font-size: 28px;
+  }
+}
+.work-conditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  margin: auto;
+}
+.work-conditions__img {
+  -ms-flex-preferred-size: 41%;
+      flex-basis: 41%;
+  width: 41%;
+}
+
+.conditions-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.conditions-text__title {
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 24px;
+  color: #0B163F;
+}
+.conditions-text__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #687089;
+  line-height: 1.5;
+}
+.conditions-text__btn {
+  width: 250px;
+}
+
+@media screen and (max-width: 1150px) {
+  .work-conditions__img {
+    -ms-flex-preferred-size: 37%;
+        flex-basis: 37%;
+    width: 37%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .work-conditions__img {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .work-conditions {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .work-conditions__img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .conditions-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0% 7.5%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .conditions-text__btn {
+    margin-bottom: 24px;
+  }
+  .conditions-text__title {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
