@@ -1,0 +1,36 @@
+.payment
+    &__title
+        margin: 0
+        font-size: 40px
+        text-align: center
+        color: $title
+        margin-bottom: 64px
+    &-wrap
+        display: flex
+        justify-content: space-between
+    &__item
+        flex-basis: 25%
+.payment-item-title
+    color: $title
+    font-size: 24px
+.payment-item-text
+    color: $p-text
+    font-size: 18px
+    line-height: 1.5
+.item-line
+    display: block
+    width: 50px
+    height: 3px
+    background-color: $primary
+    margin-bottom: 40px
+@media screen and ( max-width: 1000px)
+    .payment
+        &__item
+            flex-basis: 30%
+@media screen and ( max-width: 825px)
+    .payment
+        &-wrap
+            flex-direction: column
+        &__item
+            margin-bottom: 40px
+            flex-basis: 100%
