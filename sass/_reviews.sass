@@ -1,0 +1,92 @@
+.reviews
+    margin-bottom: -100px
+    &-title
+.review-card
+    padding-right: 40px
+    &__img
+        position: relative
+        width: 100%
+    &__hero
+        background: #fff
+        width: 100%
+        padding: 40px
+.card
+    &-img
+        width: 100%
+    &-name
+        margin: 0
+        position: absolute
+        color: #fff
+        bottom: 24px
+        left: 32px
+        font-size: 20px
+    &-text
+        margin: 0
+        color: $p-text
+        font-size: 16px
+        margin-bottom: 32px
+        line-height: 1.5
+    &-authur
+        display: flex
+        align-items: center
+        font-size: 14px
+        margin-bottom: 20px
+        &__logo
+            width: 32px
+            height: 32px
+            display: block
+            background: #56B5CF
+            border-radius: 50%
+            color: #fff
+            padding: 8px
+            text-align: center
+        &__name
+            margin-left: 8px
+.reviews-slider-title
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 52px
+    &__group
+        display: flex
+        margin-right: 40px
+    &__btn
+        font-weight: 700
+        display: block
+        width: 48px
+        height: 48px
+        margin-left: 24px
+        box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.05)
+        box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1)
+        color: $primary
+        font-size: 24px
+        border-radius: 50%
+        cursor: pointer
+        padding: 10px
+        text-align: center
+@media screen and ( max-width: 1000px )
+    .review-card
+        padding-right: 20px
+        &__hero
+            padding: 20px
+@media screen and ( max-width: 550px )
+    .reviews-slider-title
+        &__btn
+            margin-left: 16px
+    .reviews-slider-title
+        &__group
+            margin-right: 0px
+    .review-card
+        padding-right: 0px
+@media screen and ( max-width: 400px )
+    .reviews-slider-title
+        &__group
+            display: none
+    .reviews
+        margin-bottom: 0px
+        padding-top: 40px
+        &-title
+            text-align: center
+            margin: auto
+    .review-card
+        margin-bottom: 40px
