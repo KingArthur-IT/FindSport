@@ -37,3 +37,71 @@
             line-height: 1.5
             font-size: 16px
             color: $p-text
+.mobile-only
+    display: none
+.mobile-hide
+@media screen and ( max-width: 1200px )
+    .controls
+        &__hero
+            flex-basis: 70%
+@media screen and ( max-width: 800px )
+    .controls
+        &__hero
+            flex-basis: 80%
+        &__img
+            &-ellipse
+                margin-right: -20%
+            &-mcbook
+                margin-right: -15%
+@media screen and ( max-width: 700px )
+    .controls
+        &__hero
+            flex-basis: 90%
+@media screen and ( max-width: 600px )
+    .controls
+        flex-direction: column-reverse
+        &__hero
+            flex-basis: 100%
+        &__img
+            &-ellipse
+                left: 0%
+                position: relative
+                right: auto
+                margin-right: 0
+                width: 90%
+                margin-bottom: 40px
+            &-mcbook
+                top: 20%
+                left: -5%
+                right: auto
+                margin-right: 0
+                width: 110%
+        &-item
+            flex-basis: 45%
+            margin-right: 5%
+            margin-bottom: 40px
+            text-align: center
+    .mobile-only
+        display: block
+        text-align: center
+    .mobile-hide
+        display: none
+@media screen and ( max-width: 400px )
+    .controls
+        margin-top: 40px
+        &-item
+            flex-basis: 92.5%
+            margin-right: 7.5%
+            margin-bottom: 40px
+            &__img
+                margin-bottom: 24px
+        &__img
+            &-mcbook
+                top: 13.5%
+        &__title
+            width: 80%
+@media screen and ( max-width: 342px )
+    .controls
+        &__img
+            &-mcbook
+                top: 15%
