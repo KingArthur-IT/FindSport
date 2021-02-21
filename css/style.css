@@ -350,16 +350,20 @@ template {
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   background-color: #F85C78;
   border-radius: 51px;
-  color: #fff;
-  font-weight: normal;
-  font-size: 20px;
   outline: none;
   border: none;
   padding: 15px 40px;
   cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .container {
@@ -454,6 +458,7 @@ template {
   padding-top: 32px;
 }
 .menu__link {
+  font-family: "Ubuny", sans-serif;
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -464,6 +469,11 @@ template {
 
 .logotype {
   width: 120px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-style: italic;
 }
 
 .header-wrap {

@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fontawesome/all.min.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <title>FindSport</title>
+    <link rel="stylesheet" href="./css/sweetalert2.min.css">
+    <title>DoSport</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="menu">
-                <a href="index.html">
-                    <img src="./img/header/logotype.png" alt="logotype" class = "logotype">
-                </a>
-                <a href="" class = "menu__link">Войти</a>
+                <a href="index.html" class = "logotype">DoSport</a>
+                <a href="javascript:demoLockup()" class = "menu__link">Войти</a>
             </nav>
             <div class = "header-wrap">
                 <div class="header-info">
@@ -26,7 +25,7 @@
                     <h2 class = "header-info__subtitle">для вашей площадки</h2>
                     <p class = header-info__text>и удобная система управления расписанием</p>
                     <button class = "btn header-info__btn">
-                        Подробнее<i class="fas fa-arrow-right arrow-right"></i>
+                            Подробнее<i class="fas fa-arrow-right arrow-right"></i>
                     </button>
                 </div>
                 <img src="./img/header/monitor.png" alt="" class = "header-img">
@@ -38,6 +37,7 @@
         <img src="./img/header/header-ball-4.png" alt="" class="header-ball-4">
     </header>
     <div class="bg-colored">
+        <!--advantages-block-->
         <div class="container bg-colored advantages-block">
             <div class="advantages-block__item">
                 <img src="./img/advantages-1.png" alt="" class="adv-item-img">
@@ -52,6 +52,7 @@
                 <p class="adv-item-text"> Бронирований в месяц в нашем сервисе</p>
             </div>
         </div>    
+        <!--booking-->
         <div class="booking">
             <div class="booking-hero">
                 <div class="booking-info">
@@ -64,6 +65,7 @@
             </div>
             <img src="./img/booking-ipad.png" alt="" class="booking-ipad">
         </div>
+        <!--work-conditions-->
         <div class="container-padding work-conditions">
             <div class = "conditions-text">
                 <h2 class="title conditions-text__title">Как это работает</h2>
@@ -72,13 +74,14 @@
                     Так мы сокращаем процент отмен, а значит увеличиваем доходы площадки.
                 </p>
                 <button class="btn conditions-text__btn">
-                    Подробнее<i class="fas fa-arrow-right arrow-right"></i>
+                        Подробнее<i class="fas fa-arrow-right arrow-right"></i>
                 </button>            
             </div>
             <img src="./img/video.png" alt="" class = "work-conditions__img">
         </div>  
     </div> 
-    <div class="bg-mobile-change">
+    <!--payment-->
+    <div class="bg-mobile-change">        
         <div class = "container container-padding payment">
             <h2 class = "title payment__title">Прием оплат банковскими картами</h2>
             <div class = "payment-wrap">
@@ -109,7 +112,8 @@
             </div>
         </div>
     </div>
-    <div class = "bg-colored">
+    <!--shedule-->
+    <div class = "bg-colored">        
         <div class="container shedule">
             <h2 class = "title shedule__title">Расписание и бронирование <br>на вашем сайте</h2>
             <p class = "shedule__text">Бесплатный виджет виджет расписания прямо на вашем сайте повышает количество 
@@ -117,10 +121,13 @@
             </p>
             <div class = "shedule__img-block">
                 <p class = "shedule-img-text">А еще он принимает онлайн оплату и повышает эффективность ваших рекламных компаний</p>
-                <button class = "btn shedule__btn">Добавить площадку <i class="fas fa-arrow-right arrow-right"></i></button>
+                <button class = "btn shedule__btn">
+                        Добавить площадку <i class="fas fa-arrow-right arrow-right"></i>                  
+                </button>
             </div>
         </div>
     </div>
+    <!--controls-->
     <div class = "container-padding controls">        
         <div class="controls__hero">
             <h2 class = "title controls__title mobile-hide">Система управления площадкой</h2>
@@ -155,6 +162,7 @@
         <img src="./img/mackbook.png" alt="" class="controls__img-mcbook">
         <h2 class="title controls__title mobile-only">Система управления площадкой</h2>
     </div>
+    <!--reviews-->
     <div class = "only-mobile-bg">
         <div class="container reviews">
             <div class="reviews-slider-title">
@@ -377,5 +385,6 @@
     <script src="./js/jQuery.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
 </body>
 </html>

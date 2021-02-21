@@ -48,3 +48,17 @@ $(window).resize(function () {
         location.reload();
     }
 });
+
+function demoLockup() {
+    Swal.fire({
+        icon: 'info',
+        title: 'Это демо-версия сайта',
+        text: 'Этот сайт лишь "лицевая" часть некоторого проекта, поэтому в нем ограничены некоторые функции. Серверная часть требует работы back-end разработчика.'
+    })
+}
+
+$(document).ready(function () { 
+    $('.btn').on('click', function () {
+        demoLockup();
+    });
+})
