@@ -1359,6 +1359,61 @@ template {
     margin-bottom: 40px;
   }
 }
+.cases {
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 200px;
+}
 .cases-title {
   text-align: center;
+  margin-bottom: 55px;
+}
+.cases-head {
+  background: url("../img/schedule-bg.png") no-repeat;
+  background-size: 100% 150%;
+  padding: 40px;
+  text-align: center;
+}
+.cases-head__title {
+  color: #fff;
+  margin-bottom: 18px;
+}
+.cases-head__text {
+  font-size: 16px;
+  color: #F6F7FC;
+  width: 80%;
+  margin: auto;
+}
+.cases-body {
+  background: #fff;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cases-body-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+.cases-body-item {
+  margin-bottom: 40px;
+}
+.cases-body-item__title {
+  margin: 0;
+  font-size: 18px;
+  color: #0B163F;
+}
+.cases-body-item__text {
+  font-size: 14px;
+  color: #687089;
 }/*# sourceMappingURL=style.css.map */
