@@ -26,6 +26,19 @@ $(document).ready(function () {
             }
         ]    
     });
+    $('#case-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.cases-slider-btn-left'),
+        nextArrow: $('.cases-slider-btn-right'),
+        responsive: [
+            {
+                breakpoint: 400,
+                settings: "unslick"
+            }
+        ]    
+    });
 })
 
 //При изменении размеров окна отрегулировать меню

@@ -160,12 +160,12 @@
             <div class="reviews-slider-title">
                 <h2 class="title reviews-title">Отзывы партнеров</h2>
                 <div class="reviews-slider-title__group">
-                    <div class="reviews-slider-title__btn" id="reviews-slider-left">&lt</div>
-                    <div class="reviews-slider-title__btn" id="reviews-slider-right">&gt</div>
+                    <div class="slider-btn reviews-slider-title__btn" id="reviews-slider-left">&lt</div>
+                    <div class="slider-btn reviews-slider-title__btn" id="reviews-slider-right">&gt</div>
                 </div>
             </div>
             <div id="reviews-slider">
-                <div class="review-card">
+                <div class="slider-item review-card">
                     <div class="review-card__img">
                         <img src="./img/testimonials/review-1.png" alt="" class="card-img">
                         <p class="card-name">Футбольный зал "Профи"</p>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="slider-item review-card">
                     <div class="review-card__img">
                         <img src="./img/testimonials/review-2.png" alt="" class="card-img">
                         <p class="card-name">Футбольный зал "Профи"</p>
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="slider-item review-card">
                     <div class="review-card__img">
                         <img src="./img/testimonials/review-3.png" alt="" class="card-img">
                         <p class="card-name">Футбольный зал "Профи"</p>
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="slider-item review-card">
                     <div class="review-card__img">
                         <img src="./img/testimonials/review-1.png" alt="" class="card-img">
                         <p class="card-name">Футбольный зал "Профи"</p>
@@ -228,59 +228,141 @@
             </div>
         </div>
     </div>
+    <!--Cases-->
     <div class = "bg-colored">
         <div class="container container-padding cases">
             <h2 class = "title cases-title">Наши кейсы</h2>
-            <div class="cases-head">
-                <h3 class = "title cases-head__title">
-                    Центр пляжных видом спорта "Жара"
-                </h3>
-                <p class = "cases-head__text">
-                    это 3 крытые площадки для круглосуточных занятий пляжным волейболом и теннисом 
-                    недалеко от м. Молодежная. Отвечал директор центра - Николай Гнеденков.
-                </p>
-            </div>
-            <div class="cases-body">
-                <div class="cases-body-col">
-                    <div class = cases-body-item>
-                        <h3 class = cases-body-item__title>
-                            Расскажите о работе клуба после открытия. сколько было клиентов? какая была загруженность на площадке? были ли проблемы
-                            с администрированием?
-                        </h3>
-                        <p class = cases-body-item__text>
-                            По началу было сложно. Мы открылись не в сезон, в декабре. А сезон нашего центра начинается с сентября месяца.
-                            Загруженность на площадках была минимальная, около 30%. Клуб работал без администраторов. Я всем занимался сам.
-                        </p>
-                    </div>
-                    <div class=cases-body-item>
-                        <h3 class=cases-body-item__title>
-                            Как узнали о Findsport?
-                        </h3>
-                        <p class=cases-body-item__text>
-                            Коллеги (по пляжному волейболу) посоветовали вашу площадку. Я в кратчайшие сроки с вами связался и подключился к вам.
-                        </p>
+            <div class = "frames-wrap">
+                <div id = "case-slider" class = "cases-slider">
+                    <!--item 1-->
+                    <div class = "slider-item">
+                        <div class="cases-head">
+                            <h3 class="title cases-head__title">
+                                Центр пляжных видов спорта "Жара"
+                            </h3>
+                            <p class="cases-head__text">
+                                это 3 крытые площадки для круглосуточных занятий пляжным волейболом и теннисом
+                                недалеко от м. Молодежная. Отвечал директор центра - Николай Гнеденков.
+                            </p>
+                        </div>
+                        <div class="cases-body">
+                            <div class="cases-body-col">
+                                <div class=cases-body-item>
+                                    <h3 class=cases-body-item__title>
+                                        Расскажите о работе клуба после открытия. сколько было клиентов? какая была загруженность на площадке?
+                                        были ли проблемы
+                                        с администрированием?
+                                    </h3>
+                                    <p class=cases-body-item__text>
+                                        По началу было сложно. Мы открылись не в сезон, в декабре. А сезон нашего центра начинается с сентября
+                                        месяца.
+                                        Загруженность на площадках была минимальная, около 30%. Клуб работал без администраторов. Я всем
+                                        занимался сам.
+                                    </p>
+                                </div>
+                                <div class=cases-body-item>
+                                    <h3 class=cases-body-item__title>
+                                        Как узнали о Findsport?
+                                    </h3>
+                                    <p class=cases-body-item__text>
+                                        Коллеги (по пляжному волейболу) посоветовали вашу площадку. Я в кратчайшие сроки с вами связался и
+                                        подключился к вам.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cases-body-col">
+                                <div class=cases-body-item>
+                                    <h3 class=cases-body-item__title>
+                                        Какими инструментами Findsport пользуетесь?
+                                    </h3>
+                                    <p class=cases-body-item__text>
+                                        На данный момент мы размещаем площадки на Findsport, также сразу установили виджет расписания на наш
+                                        сайт, чтобы люди
+                                        бронировали у нас. Онлайн оплату пока не подключили, но доработаем, так как вижу, что это удобно.
+                                </div>
+                                <div class=cases-body-item>
+                                    <h3 class=cases-body-item__title>
+                                        2-3 самых полезных функции сайта
+                                    </h3>
+                                    <p class=cases-body-item__text>
+                                        Удобство бронирования с точки зрения и клиента и администратора. И старым и новым клиентам удобно
+                                        пользоваться сайтом.
+                                        Еще очень хорошо работают уведомления о новых заказах. Администратор сразу видит заказ и либо сразу
+                                        отправляет
+                                        подтверждение клиенту, либо созванивается с ним, если есть какие-нибудь вопросы.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <!--item 2-->
+                    <div class = "slider-item">
+                        <div class="cases-head">
+                            <h3 class="title cases-head__title">
+                                Центр пляжных видов спорта "Жара"
+                            </h3>
+                            <p class="cases-head__text">
+                                это 3 крытые площадки для круглосуточных занятий пляжным волейболом и теннисом
+                                недалеко от м. Молодежная. Отвечал директор центра - Николай Гнеденков.
+                            </p>
+                        </div>
+                        <div class="cases-body">
+                            <div class="cases-body-col">
+                                <div class=cases-body-item>
+                                    <h3 class=cases-body-item__title>
+                                        Расскажите о работе клуба после открытия. сколько было клиентов? какая была загруженность на
+                                        площадке?
+                                        были ли проблемы
+                                        с администрированием?
+                                    </h3>
+                                    <p class=cases-body-item__text>
+                                        По началу было сложно. Мы открылись не в сезон, в декабре. А сезон нашего центра начинается с
+                                        сентября
+                                        месяца.
+                                        Загруженность на площадках была минимальная, около 30%. Клуб работал без администраторов. Я всем
+                                        занимался сам.
+                                    </p>
+                                </div>
+                                <div class=cases-body-item>
+                                    <h3 class=cases-body-item__title>
+                                        Как узнали о Findsport?
+                                    </h3>
+                                    <p class=cases-body-item__text>
+                                        Коллеги (по пляжному волейболу) посоветовали вашу площадку. Я в кратчайшие сроки с вами связался и
+                                        подключился к вам.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cases-body-col">
+                                <div class=cases-body-item>
+                                    <h3 class=cases-body-item__title>
+                                        Какими инструментами Findsport пользуетесь?
+                                    </h3>
+                                    <p class=cases-body-item__text>
+                                        На данный момент мы размещаем площадки на Findsport, также сразу установили виджет расписания на наш
+                                        сайт, чтобы люди
+                                        бронировали у нас. Онлайн оплату пока не подключили, но доработаем, так как вижу, что это удобно.
+                                </div>
+                                <div class=cases-body-item>
+                                    <h3 class=cases-body-item__title>
+                                        2-3 самых полезных функции сайта
+                                    </h3>
+                                    <p class=cases-body-item__text>
+                                        Удобство бронирования с точки зрения и клиента и администратора. И старым и новым клиентам удобно
+                                        пользоваться сайтом.
+                                        Еще очень хорошо работают уведомления о новых заказах. Администратор сразу видит заказ и либо сразу
+                                        отправляет
+                                        подтверждение клиенту, либо созванивается с ним, если есть какие-нибудь вопросы.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="cases-body-col">
-                    <div class=cases-body-item>
-                        <h3 class=cases-body-item__title>
-                            Какими инструментами Findsport пользуетесь?
-                        </h3>
-                        <p class=cases-body-item__text>
-                            На данный момент мы размещаем площадки на Findsport, также сразу установили виджет расписания на наш сайт, чтобы люди
-                            бронировали у нас. Онлайн оплату пока не подключили, но доработаем, так как вижу, что это удобно.
-                    </div>
-                    <div class=cases-body-item>
-                        <h3 class=cases-body-item__title>
-                            2-3 самых полезных функции сайта
-                        </h3>
-                        <p class=cases-body-item__text>
-                            Удобство бронирования с точки зрения и клиента и администратора. И старым и новым клиентам удобно пользоваться сайтом.
-                            Еще очень хорошо работают уведомления о новых заказах. Администратор сразу видит заказ и либо сразу отправляет
-                            подтверждение клиенту, либо созванивается с ним, если есть какие-нибудь вопросы.
-                        </p>
-                    </div>
-                </div>
+                <div class="slider-btn cases-slider-btn cases-slider-btn-left" id="reviews-slider-left">&lt</div>
+                <div class="slider-btn cases-slider-btn cases-slider-btn-right" id="reviews-slider-right">&gt</div>
+                <img src="./img/left-frame.png" alt="" class="cases-frames cases-frames-left">
+                <img src="./img/right-frame.png" alt="" class="cases-frames cases-frames-right">
             </div>
         </div>
     </div>

@@ -2,6 +2,7 @@
     line-height: 1.5
     font-family: 'Ubuntu', sans-serif
     padding-top: 200px
+    position: relative
     &-title
         text-align: center
         margin-bottom: 55px
@@ -23,6 +24,8 @@
         padding: 40px
         display: flex
         justify-content: space-between
+        border: 1px solid rgba(11, 22, 61, 0.2)
+        border-radius: 6px
         &-col
             display: flex
             flex-direction: column
@@ -36,3 +39,61 @@
             &__text
                 font-size: 14px
                 color: $p-text
+    &-slider
+        &-btn
+            position: absolute
+            top: 50%
+            z-index: 2
+            padding: 7px
+            &-left
+                left: -2%
+            &-right
+                right: -2%
+    &-frames
+        position: absolute
+        bottom: 0
+        height: 100%
+        &-left
+            left: -7.5%
+        &-right
+            right: -7.5%
+.frames-wrap
+    position: relative
+@media screen and ( max-width: 1100px )
+    .cases-frames
+        display: none
+    .cases
+        &-slider
+            &-btn
+                &-left
+                    left: -3%
+                &-right
+                    right: -3%
+@media screen and ( max-width: 700px )
+    .cases
+        &-body
+            flex-direction: column
+        &-slider
+            &-btn
+                &-left
+                    left: -4%
+                &-right
+                    right: -4%
+@media screen and ( max-width: 575px )
+    .cases
+        &-slider
+            &-btn
+                &-left
+                    left: -5%
+                &-right
+                    right: -5%
+@media screen and ( max-width: 400px )
+    .cases
+        padding-top: 60px
+        &-slider
+            &-btn
+                display: none
+    .slider-item
+        display: none
+        &:first-child
+            display: block
